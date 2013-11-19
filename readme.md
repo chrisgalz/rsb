@@ -8,8 +8,7 @@ Here is general usage:
 
 Import SearchReplacement.h in whatever class you want to use this in
 
->#import "SearchReplacement.h"
-Make sure to enter the delegate like in the interface
+Make sure to enter the delegate like <SearchReplacementDelegate> in the interface
 
 Put it in your code somewhere like this SearchReplacement *search = [[SearchReplacement alloc] initWithFrame:CGRectMake(0, 0, 320, 44)]; search.delegate = self; [self.view addSubview:search];
 
@@ -20,9 +19,15 @@ The background of the search bar can have it's color changed with this property 
 The delegate methods for this are:
 
 (void)searchReplacementSearchBarDidBeginEditing:(SearchReplacement*)searchReplacementBar withSearchBar:(UITextField*)searchBar;
+
 (void)searchReplacementSearchBarDidEndEditing:(SearchReplacement*)searchReplacementBar withSearchBar:(UITextField*)searchBar;
+
 (void)searchReplacementSearchButtonTapped:(SearchReplacement*)searchReplacementBar withSearchBar:(UITextField*)searchBar;
+
 (void)searchReplacementSearchBarTextChanged:(SearchReplacement*)searchReplacementBar withSearchBar:(UITextField*)searchBar;
+
 The delegate methods have both the search replacement bar and its UITextField for easier access.
 
 That's pretty much it. It's not that special.
+
+Also, markdown is satan.
