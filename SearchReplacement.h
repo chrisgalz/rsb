@@ -11,6 +11,7 @@
 @class SearchReplacement;
 
 @protocol SearchReplacementDelegate<NSObject>
+@optional
 - (void)searchReplacementSearchBarDidBeginEditing:(SearchReplacement*)searchReplacementBar withSearchBar:(UITextField*)searchBar;
 - (void)searchReplacementSearchBarDidEndEditing:(SearchReplacement*)searchReplacementBar withSearchBar:(UITextField*)searchBar;
 - (void)searchReplacementSearchButtonTapped:(SearchReplacement*)searchReplacementBar withSearchBar:(UITextField*)searchBar;
