@@ -17,7 +17,9 @@ in the interface
 Put it in your code somewhere like this 
 
 ```objc
-SearchReplacement *search = [[SearchReplacement alloc] initWithFrame:CGRectMake(0, 0, 320, 44)]; search.delegate = self; [self.view addSubview:search];
+SearchReplacement *search = [[SearchReplacement alloc] initWithFrame:CGRectMake(0, 0, 320, 44)]; 
+search.delegate = self; 
+[self.view addSubview:search];
 ```
 
 The background view and the text field in the search bar can be accessed by their properties e.g. search.backgroundView search.searchField
