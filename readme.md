@@ -11,7 +11,8 @@ Import SearchReplacement.h in whatever class you want to use this in
 Make sure to enter the delegate like 
 ```objc
 <SearchReplacementDelegate>
-```in the interface
+```
+in the interface
 
 Put it in your code somewhere like this 
 
